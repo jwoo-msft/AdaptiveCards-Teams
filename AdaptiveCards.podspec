@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'AdaptiveCards'
 
-  spec.version          = '0.0.13'
+  spec.version          = '0.0.14'
   
   spec.license          = { :type => 'Adaptive Cards Binary EULA', :file => 'AdaptiveCards/source/EULA-Non-Windows.txt' }
   
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   
   spec.summary          = 'Adaptive Cards are a new way for developers to exchange card content in a common and consistent way'
   
-  spec.source       = { :git => 'https://github.com/janusbal/AdaptiveCards-Teams.git', :tag => '0.0.13' }
+  spec.source       = { :git => 'https://github.com/janusbal/AdaptiveCards-Teams.git', :tag => '0.0.14' }
 
   spec.source_files           = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/**/*.{h,m,mm}'
 
@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
     }
   end
 
-  spec.platform         = :ios, '12'
+  spec.platform         = :ios, '14'
 
   spec.frameworks = 'AVFoundation', 'AVKit', 'CoreGraphics', 'QuartzCore', 'UIKit'
 
