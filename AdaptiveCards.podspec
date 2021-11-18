@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.version = "2.8.1"
   s.license = { :type => "Copyright (c) Microsoft", :file => "LICENSE" }
   s.author = { "Microsoft Teams" => "teams@microsoft.com" }
-  s.homepage = "https://domoreexp.visualstudio.com/DefaultCollection/Teamspace/Teamspace%20Team/_git/Teamspace-iOS?path=%2FREADME.md&version=GBdevelop"
-  s.source = { :git => 'https://github.com/microsoft/AdaptiveCards.git' }
+  s.homepage = "https://github.com/janusbal/AdaptiveCards-Teams.git"
+  s.source = { :git => 'https://github.com/janusbal/AdaptiveCards-Teams.git' }
   s.pod_target_xcconfig = { 'ENABLE_TESTABILITY' => 'NO' }
 
   s.platform = :ios
