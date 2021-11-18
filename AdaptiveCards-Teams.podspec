@@ -1,6 +1,6 @@
   
 Pod::Spec.new do |spec|
-  spec.name             = 'AdaptiveCards-Teams'
+  spec.name             = 'AdaptiveCards'
 
   spec.version          = '0.0.2'
   
