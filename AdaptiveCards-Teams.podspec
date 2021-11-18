@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name = "AdaptiveCards"
+  s.name = "AdaptiveCards-Teams"
   s.summary = "This module contains sub-features in the conversation."
   s.requires_arc = true
   s.version = "0.0.1"
