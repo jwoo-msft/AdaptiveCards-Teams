@@ -37,6 +37,4 @@ Pod::Spec.new do |spec|
   spec.resource_bundles = {'AdaptiveCards' => ['AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/Resources/**/*']}
 
   spec.exclude_files = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/include/**/*'
-
-  spec.dependency 'MicrosoftFluentUI/Tooltip_ios', '~> 0.3.6'
 end
