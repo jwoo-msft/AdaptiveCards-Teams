@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name = "AdaptiveCards"
   s.summary = "This module contains sub-features in the conversation."
   s.requires_arc = true
-  s.version = "2.8.1"
+  s.version = "0.0.1"
   s.license = { :type => "Copyright (c) Microsoft", :file => "LICENSE" }
   s.author = { "Microsoft Teams" => "teams@microsoft.com" }
   s.homepage = "https://github.com/janusbal/AdaptiveCards-Teams.git"
