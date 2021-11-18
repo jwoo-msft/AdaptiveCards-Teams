@@ -2,9 +2,9 @@
 Pod::Spec.new do |spec|
   spec.name             = 'AdaptiveCards'
 
-  spec.version          = '2.8.1'
+  spec.version          = '0.0.10'
   
-  spec.license          = { :type => 'Adaptive Cards Binary EULA', :file => 'source/EULA-Non-Windows.txt' } 
+  spec.license          = { :type => 'Adaptive Cards Binary EULA', :file => 'source/EULA-Non-Windows.txt' }
   
   spec.homepage         = 'https://adaptivecards.io'
   
@@ -12,14 +12,14 @@ Pod::Spec.new do |spec|
   
   spec.summary          = 'Adaptive Cards are a new way for developers to exchange card content in a common and consistent way'
   
-  spec.source       = { :git => 'https://github.com/janusbal/AdaptiveCards-Teams.git', :tag => '0.0.8' }
+  spec.source       = { :git => 'https://github.com/janusbal/AdaptiveCards-Teams.git', :tag => '0.0.10' }
 
-  spec.source_files           = 'source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/**/*.{h,m,mm}' 
+  spec.source_files           = 'source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/**/*.{h,m,mm}'
 
   spec.subspec 'ObjectModel' do | sspec |
-    sspec.source_file = 'source/shared/cpp/ObjectModel/**/*.{h,cpp}', 'source/shared/cpp/ObjectModel/json/**/*.{h}'
+    sspec.source_files = 'source/shared/cpp/ObjectModel/**/*.{h,cpp}', 'source/shared/cpp/ObjectModel/json/**/*.{h}'
     sspec.header_mappings_dir = 'source/shared/cpp/ObjectModel/'
-    sspec.project_header_file = 'source/shared/cpp/ObjectModel/**/*.{h}'
+    sspec.project_header_files = 'source/shared/cpp/ObjectModel/**/*.{h}'
     sspec.xcconfig = {
          'CLANG_CXX_LANGUAGE_STANDARD' => 'c++17',
          'CLANG_CXX_LIBRARY' => 'libc++'
@@ -28,11 +28,11 @@ Pod::Spec.new do |spec|
 
   spec.platform         = :ios, '12'
 
-  spec.frameworks = 'AVFoundation', 'AVKit', 'CoreGraphics', 'QuartzCore', 'UIKit' 
+  spec.frameworks = 'AVFoundation', 'AVKit', 'CoreGraphics', 'QuartzCore', 'UIKit'
 
   spec.public_header_files = 'source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/*.h'
 
-  spec.project_header_file = 'source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/PrivateHeaders/*.h'
+  spec.project_header_files = 'source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/PrivateHeaders/*.h'
 
   spec.resource_bundles = {'AdaptiveCards' => ['source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/Resources/**/*']}
 
@@ -40,4 +40,3 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'MicrosoftFluentUI', '~> 0.1.16'
 end
-
