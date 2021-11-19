@@ -14,12 +14,12 @@ Pod::Spec.new do |spec|
   
   spec.source       = { :git => 'https://github.com/janusbal/AdaptiveCards-Teams.git', :tag => '0.0.14' }
 
-  spec.source_files           = 'source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/**/*.{h,m,mm}'
+  spec.source_files           = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/**/*.{h,m,mm}'
 
   spec.subspec 'ObjectModel' do | sspec |
-    sspec.source_files = 'source/shared/cpp/ObjectModel/**/*.{h,cpp}', 'source/shared/cpp/ObjectModel/json/**/*.{h}'
-    sspec.header_mappings_dir = 'source/shared/cpp/ObjectModel/'
-    sspec.project_header_files = 'source/shared/cpp/ObjectModel/**/*.{h}'
+    sspec.source_files = 'AdaptiveCards/source/shared/cpp/ObjectModel/**/*.{h,cpp}', 'AdaptiveCards/source/shared/cpp/ObjectModel/json/**/*.{h}'
+    sspec.header_mappings_dir = 'AdaptiveCards/source/shared/cpp/ObjectModel/'
+    sspec.project_header_files = 'AdaptiveCards/source/shared/cpp/ObjectModel/**/*.{h}'
     sspec.xcconfig = {
          'CLANG_CXX_LANGUAGE_STANDARD' => 'c++17',
          'CLANG_CXX_LIBRARY' => 'libc++'
@@ -30,11 +30,11 @@ Pod::Spec.new do |spec|
 
   spec.frameworks = 'AVFoundation', 'AVKit', 'CoreGraphics', 'QuartzCore', 'UIKit'
 
-  spec.public_header_files = 'source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/*.h'
+  spec.public_header_files = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/*.h'
 
-  spec.project_header_files = 'source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/PrivateHeaders/*.h'
+  spec.project_header_files = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/PrivateHeaders/*.h'
 
-  spec.resource_bundles = {'AdaptiveCards' => ['source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/Resources/**/*']}
+  spec.resource_bundles = {'AdaptiveCards' => ['AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/Resources/**/*']}
 
-  spec.exclude_files = 'source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/include/**/*'
+  spec.exclude_files = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/include/**/*'
 end
