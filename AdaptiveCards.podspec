@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
 
   spec.frameworks = 'AVFoundation', 'AVKit', 'CoreGraphics', 'QuartzCore', 'UIKit'
 
-  spec.public_header_files = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/*.h'
+  spec.public_header_files = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/*.h','AdaptiveCards/source/shared/cpp/ObjectModel/**/*.h'
 
   spec.project_header_files = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/PrivateHeaders/*.h'
 
