@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'AdaptiveCards'
 
-  spec.version          = '0.0.14'
+  spec.version          = '0.0.19'
   
   spec.license          = { :type => 'Adaptive Cards Binary EULA', :file => 'AdaptiveCards/source/EULA-Non-Windows.txt' }
   
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   
   spec.summary          = 'Adaptive Cards are a new way for developers to exchange card content in a common and consistent way'
   
-  spec.source       = { :git => 'https://github.com/janusbal/AdaptiveCards-Teams.git', :tag => '0.0.14' }
+  spec.source       = { :git => 'https://github.com/janusbal/AdaptiveCards-Teams.git', :tag => '0.0.19' }
 
   spec.source_files           = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/**/*.{h,m,mm}'
 
@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
 
   spec.frameworks = 'AVFoundation', 'AVKit', 'CoreGraphics', 'QuartzCore', 'UIKit'
 
-  spec.public_header_files = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/*.h'
+  spec.public_header_files = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/*.h', 'AdaptiveCards/source/shared/cpp/ObjectModel/**/*.h'
 
   spec.project_header_files = 'AdaptiveCards/source/ios/AdaptiveCards/AdaptiveCards/AdaptiveCards/PrivateHeaders/*.h'
 
